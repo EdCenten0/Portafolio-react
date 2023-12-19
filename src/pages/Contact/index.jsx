@@ -1,10 +1,15 @@
 import React from "react";
+import MainPanel from "../../components/MainPanel";
+import SecondaryPanel from "../../components/SecondaryPanel";
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact Page</h1>
-    </div>
+    <>
+      <MainPanel>
+        <h1>Hola</h1>
+      </MainPanel>
+      <SecondaryPanel></SecondaryPanel>
+    </>
   );
 };
 

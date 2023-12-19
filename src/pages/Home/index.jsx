@@ -1,11 +1,15 @@
 import React from "react";
 import MainPanel from "../../components/MainPanel";
+import SecondaryPanel from "../../components/SecondaryPanel";
 
 function Home() {
   return (
-    <div>
-      <MainPanel />
-    </div>
+    <>
+      <MainPanel>
+        <h1>Hola</h1>
+      </MainPanel>
+      <SecondaryPanel></SecondaryPanel>
+    </>
   );
 }
 
