@@ -12,7 +12,7 @@ const Navbar = () => {
   const activeStyle = "underline underline-offset-8";
 
   return (
-    <nav className="w-full h-10 p-6 bg-teal-700 rounded-lg flex items-center col-span-3 row-start-1 m-auto">
+    <nav className="w-full h-10 p-6 bg-teal-700 rounded-lg flex items-center col-span-3 row-start-1 m-auto mb-4">
       <ul className="w-full flex flex-row gap-8 justify-between">
         <div className="flex flex-row gap-4">
           <li className="flex flex-row items-center gap-1">
