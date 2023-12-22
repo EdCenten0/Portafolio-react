@@ -108,13 +108,6 @@ function Home() {
           </p>
         </div>
       </MainPanel>
-      <SecondaryPanel>
-        <h3 className=" text-xl font-bold pb-4">Some data</h3>
-        <p className=" font-medium my-4">18 years old</p>
-        <p className=" font-medium my-4">Nicaragua</p>
-        <p className=" font-medium my-4">Universidad Centroamericana</p>
-        <p className=" font-medium my-4">English - Spanish</p>
-      </SecondaryPanel>
     </>
   );
 }

@@ -8,7 +8,6 @@ const Contact = () => {
       <MainPanel>
         <h1>Hola</h1>
       </MainPanel>
-      <SecondaryPanel></SecondaryPanel>
     </>
   );
 };
