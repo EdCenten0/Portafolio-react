@@ -2,13 +2,17 @@ import React from "react";
 
 const Card = ({ title, description, imageURL, projectURL }) => {
   return (
-    <div className=" h-80 w-64 rounded-lg border border-gray-500  flex flex-col gap-3 p-4">
-      <div className=" rounded-lg">
+    <div className=" h-80 w-52  border border-gray-500  flex flex-col gap-3 ">
+      <div className=" w-full ">
         <a href={projectURL}>
-          <img src={imageURL} alt={title} className="border border-gray-500" />
+          <img
+            src={imageURL}
+            alt={title}
+            className=" border-b-2 border-gray-400 w-full"
+          />
         </a>
       </div>
-      <div>
+      <div className="p-4">
         <h4 className=" font-semibold text-md">{title}</h4>
         <p className=" text-sm">{description}</p>
       </div>
