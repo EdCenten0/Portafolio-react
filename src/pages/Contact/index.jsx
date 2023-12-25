@@ -6,7 +6,11 @@ const Contact = () => {
   return (
     <>
       <MainPanel>
-        <h1>Hola</h1>
+        <div className=" w-96">
+          <h3>Contact me</h3>
+          <p>You can contact me via email, discord, and instagram</p>
+        </div>
+        <div></div>
       </MainPanel>
     </>
   );

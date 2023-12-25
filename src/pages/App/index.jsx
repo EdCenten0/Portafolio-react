@@ -29,7 +29,7 @@ function App() {
             <p className=" font-medium my-4">18 years old</p>
             <p className=" font-medium my-4">Nicaragua</p>
             <p className=" font-medium my-4">Universidad Centroamericana</p>
-            <p className=" font-medium my-4">English - Spanish</p>
+            <p className=" font-medium my-4">English(B2) - Spanish(Native)</p>
           </SecondaryPanel>
         </Layout>
       </BrowserRouter>

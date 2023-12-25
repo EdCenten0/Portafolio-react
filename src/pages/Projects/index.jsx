@@ -1,63 +1,41 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/config";
 import MainPanel from "../../components/MainPanel";
 import SecondaryPanel from "../../components/SecondaryPanel";
 import Card from "../../components/Card";
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const projectsRef = collection(db, "projects");
+
+    getDocs(projectsRef).then((resp) => {
+      setProjects(
+        resp.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        })
+      );
+    });
+  }, []);
+
+  console.log(projects);
+
   return (
     <>
       <MainPanel>
         <div className="grid grid-cols-4 gap-6 justify-items-center w-full ">
-          <Card
-            imageURL={
-              "https://github.com/EdCenten0/Imgs/raw/master/Vite%20E-commerce/Desktop1.jpeg"
-            }
-            projectURL={"https://github.com/EdCenten0/Vite-E-commerce"}
-            title={"Vite E-commerce"}
-            description={
-              "This is a small personal project that has been develop using Vite and React.js, it has been stylized using TaildWind CSS."
-            }
-          />
-          <Card
-            imageURL={
-              "https://github.com/EdCenten0/Imgs/raw/master/Vite%20E-commerce/Desktop1.jpeg"
-            }
-            projectURL={"https://github.com/EdCenten0/Vite-E-commerce"}
-            title={"Vite E-commerce"}
-            description={
-              "This is a small personal project that has been develop using Vite and React.js, it has been stylized using TaildWind CSS."
-            }
-          />
-          <Card
-            imageURL={
-              "https://github.com/EdCenten0/Imgs/raw/master/Vite%20E-commerce/Desktop1.jpeg"
-            }
-            projectURL={"https://github.com/EdCenten0/Vite-E-commerce"}
-            title={"Vite E-commerce"}
-            description={
-              "This is a small personal project that has been develop using Vite and React.js, it has been stylized using TaildWind CSS."
-            }
-          />
-          <Card
-            imageURL={
-              "https://github.com/EdCenten0/Imgs/raw/master/Vite%20E-commerce/Desktop1.jpeg"
-            }
-            projectURL={"https://github.com/EdCenten0/Vite-E-commerce"}
-            title={"Vite E-commerce"}
-            description={
-              "This is a small personal project that has been develop using Vite and React.js, it has been stylized using TaildWind CSS."
-            }
-          />
-          <Card
-            imageURL={
-              "https://github.com/EdCenten0/Imgs/raw/master/Vite%20E-commerce/Desktop1.jpeg"
-            }
-            projectURL={"https://github.com/EdCenten0/Vite-E-commerce"}
-            title={"Vite E-commerce"}
-            description={
-              "This is a small personal project that has been develop using Vite and React.js, it has been stylized using TaildWind CSS."
-            }
-          />
+          {projects.map((project) => (
+            <Card
+              title={project.title}
+              description={project.description}
+              imageURL={project.imageURL}
+              projectURL={project.projectURL}
+              key={project.id}
+            />
+          ))}
         </div>
       </MainPanel>
     </>

@@ -3,12 +3,12 @@ import React from "react";
 const Card = ({ title, description, imageURL, projectURL }) => {
   return (
     <div className=" h-80 w-52  border border-gray-500  flex flex-col gap-3 ">
-      <div className=" w-full ">
+      <div className=" w-full h-28 ">
         <a href={projectURL}>
           <img
             src={imageURL}
             alt={title}
-            className=" border-b-2 border-gray-400 w-full"
+            className=" border-b-2 border-gray-400 "
           />
         </a>
       </div>
