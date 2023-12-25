@@ -2,7 +2,10 @@ import React from "react";
 
 const SecondaryPanel = ({ children }) => {
   return (
-    <div className=" h-fit w-11/12 bg-white rounded-md col-start-3 col-end-4 p-8">
+    <div
+      style={{ backgroundColor: "#376ca0" }}
+      className=" h-fit w-11/12 rounded-md col-start-3 col-end-4 p-8"
+    >
       {children}
     </div>
   );

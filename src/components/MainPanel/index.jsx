@@ -3,7 +3,10 @@ import "./index.css";
 
 const MainPanel = ({ children }) => {
   return (
-    <div className=" w-11/12 h-auto m-auto rounded-md p-5 bg-white overflow-auto">
+    <div
+      style={{ backgroundColor: "#376ca0" }}
+      className=" w-11/12 h-auto m-auto rounded-md p-5  overflow-auto"
+    >
       {children}
     </div>
   );
