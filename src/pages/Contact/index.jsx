@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { collection, addDoc } from "firebase/firestore";
+import { toast } from "react-toastify";
 import { db } from "../../firebase/config";
 import MainPanel from "../../components/MainPanel";
 import SecondaryPanel from "../../components/SecondaryPanel";
@@ -19,7 +20,16 @@ const Contact = () => {
     console.log(errors);
     const docRef = addDoc(collection(db, "contactData"), data);
     reset();
-    alert("Message sent!");
+    toast.success("Message sent successfully", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   });
 
   return (
