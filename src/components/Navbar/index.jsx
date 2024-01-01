@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav
       style={{ backgroundColor: "#376ca0" }}
-      className="w-full h-10 p-6  rounded-lg flex items-center col-span-3 row-start-1 m-auto mb-4"
+      className=" order-1 w-full h-10 p-6  rounded-lg flex items-center col-span-3 row-start-1 m-auto mb-4"
     >
       <ul className="w-full flex flex-row gap-8 justify-between">
         <div className="flex flex-row gap-4">
@@ -25,7 +25,7 @@ const Navbar = () => {
               onClick={() => {}}
             >
               <img src={home} alt="home" className="h-7 w-7" />
-              <p>Home</p>
+              <p className="hidden md:inline">Home</p>
             </NavLink>
           </li>
           <li className="flex flex-row items-center gap-1">
@@ -35,7 +35,7 @@ const Navbar = () => {
               onClick={() => {}}
             >
               <img src={briefcase} alt="home" className="h-7 w-7" />
-              <p>Projects</p>
+              <p className="hidden md:inline">Projects</p>
             </NavLink>
           </li>
           <li className="flex flex-row items-center gap-1">
@@ -45,7 +45,7 @@ const Navbar = () => {
               onClick={() => {}}
             >
               <img src={contact} alt="home" className="h-7 w-7" />
-              <p>Contact me</p>
+              <p className="hidden md:inline">Contact me</p>
             </NavLink>
           </li>
         </div>

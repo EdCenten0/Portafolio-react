@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <MainPanel>
-        <div className="flex gap-10 items-center justify-start">
+        <div className="flex gap-10 items-center justify-start flex-col  lg:flex-row">
           <img
             src="https://avatars.githubusercontent.com/u/90741749?v=4"
             alt="avatar"
@@ -21,7 +21,7 @@ function Home() {
             <p className=" font-medium">
               Looking for opportunities for developing myself
             </p>
-            <div className=" flex my-6">
+            <div className=" flex my-6 flex-wrap gap-2">
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
                 alt="c"
