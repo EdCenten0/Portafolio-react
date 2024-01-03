@@ -39,8 +39,8 @@ const Contact = () => {
           <h3 className=" text-xl font-bold py-4">Contact me by:</h3>
 
           <form action="" className="flex gap-6 flex-col" onSubmit={onSubmit}>
-            <div className="flex w-full justify-between">
-              <div className="flex flex-col  w-96">
+            <div className="flex flex-col lg:flex-row w-full justify-between gap-5 ">
+              <div className="flex flex-col  w-full">
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
@@ -57,7 +57,7 @@ const Contact = () => {
                   <span className="text-red-500">{errors.name.message}</span>
                 )}
               </div>
-              <div className="flex flex-col  w-96">
+              <div className="flex flex-col w-full ">
                 <label htmlFor="email">Email</label>
                 <input
                   type="email"
