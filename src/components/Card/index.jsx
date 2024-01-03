@@ -4,7 +4,7 @@ const Card = ({ title, description, imageURL, projectURL }) => {
   return (
     <div
       style={{ backgroundColor: "#2a4b57", border: "1px solid #9494ba" }}
-      className=" h-80 w-52 rounded-xl  flex flex-col gap-3 "
+      className=" w-full h-auto rounded-xl  flex flex-col gap-3 "
     >
       <div className="">
         <a href={projectURL}>
