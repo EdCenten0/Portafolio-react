@@ -1,16 +1,13 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { collection, addDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
 import { db } from "../../firebase/config";
 import MainPanel from "../../components/MainPanel";
-import SecondaryPanel from "../../components/SecondaryPanel";
 
 const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
     reset,
   } = useForm();
@@ -18,7 +15,7 @@ const Contact = () => {
   const onSubmit = handleSubmit((data) => {
     console.log(data);
     console.log(errors);
-    const docRef = addDoc(collection(db, "contactData"), data);
+    addDoc(collection(db, "contactData"), data);
     reset();
     toast.success("Message sent successfully", {
       position: "top-center",
@@ -98,25 +95,11 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="bg-slate-700 text-white rounded-md p-2 mt-2"
+              className="bg-slate-700 text-white rounded-md p-2 mt-2 hover:bg-slate-600 active:bg-slate-200 transition-all "
             >
               Submit
             </button>
           </form>
-
-          {/* <ul>
-            <li className="py-2">
-              <a href="" className=" text-lg underline text-slate-700">
-                Email
-              </a>
-            </li>
-            <li className="py-2">
-              <a href="">Discord</a>
-            </li>
-            <li className="py-2">
-              <a href="">Instagram</a>
-            </li>
-          </ul> */}
         </div>
         <div></div>
       </MainPanel>
