@@ -1,9 +1,9 @@
-.MainPanel {
-  animation-name: mainPanelAnimation;
+.Card {
+  animation-name: carAnimation;
   animation-duration: 0.9s;
 }
 
-@keyframes mainPanelAnimation {
+@keyframes carAnimation {
   from {
     opacity: 0;
     transform: translateX(50px);

@@ -18,7 +18,7 @@ const Navbar = () => {
     >
       <ul className="w-full flex flex-row gap-8 justify-between">
         <div className="flex flex-row gap-4">
-          <li className="flex flex-row items-center gap-1">
+          <li className="flex flex-row items-center gap-1 rounded-xl hover:scale-125 hover:px-2 transition-all ">
             <NavLink
               className="flex flex-row items-center gap-1"
               to="/"
@@ -28,7 +28,7 @@ const Navbar = () => {
               <p className="hidden md:inline">Home</p>
             </NavLink>
           </li>
-          <li className="flex flex-row items-center gap-1">
+          <li className="flex flex-row items-center gap-1 hover:scale-125 hover:px-2 transition-all">
             <NavLink
               className="flex flex-row items-center gap-1"
               to="/projects"
@@ -38,7 +38,7 @@ const Navbar = () => {
               <p className="hidden md:inline">Projects</p>
             </NavLink>
           </li>
-          <li className="flex flex-row items-center gap-1">
+          <li className="flex flex-row items-center gap-1 hover:scale-125 hover:px-2 transition-all">
             <NavLink
               className="flex flex-row items-center gap-1"
               to="/contact"
@@ -50,14 +50,20 @@ const Navbar = () => {
           </li>
         </div>
         <div className="flex flex-row gap-4">
-          <li className="flex flex-row items-center gap-1">
-            <img src={dark_mode} alt="home" className="h-7 w-7" />
+          <li className="flex flex-row items-center gap-1 hover:scale-125 hover:px-2 transition-all">
+            <a href="">
+              <img src={dark_mode} alt="theme" className="h-7 w-7" />
+            </a>
           </li>
-          <li className="flex flex-row items-center gap-1">
-            <img src={github} alt="home" className="h-7 w-7" />
+          <li className="flex flex-row items-center gap-1 hover:scale-125 hover:px-2 transition-all">
+            <a href="https://github.com/EdCenten0">
+              <img src={github} alt="Github" className="h-7 w-7" />
+            </a>
           </li>
-          <li className="flex flex-row items-center gap-1">
-            <img src={linkedin} alt="home" className="h-7 w-7" />
+          <li className="flex flex-row items-center gap-1 hover:scale-125 hover:px-2 transition-all">
+            <a href="https://www.linkedin.com/in/carlos-centeno-2a4669186/">
+              <img src={linkedin} alt="LinkedIn" className="h-7 w-7" />
+            </a>
           </li>
         </div>
       </ul>

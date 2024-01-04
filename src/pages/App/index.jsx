@@ -28,7 +28,7 @@ function App() {
           <AppRoutes />
           <Navbar />
           <SecondaryPanel>
-            <h3 className=" text-xl font-bold pb-4">Some data</h3>
+            <h3 className=" text-xl font-bold pb-4">Some data about me</h3>
             <p className=" font-medium my-4">18 years old</p>
             <p className=" font-medium my-4">Nicaragua</p>
             <p className=" font-medium my-4">Universidad Centroamericana</p>

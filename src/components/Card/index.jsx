@@ -1,10 +1,11 @@
 import React from "react";
+import "./index.css";
 
 const Card = ({ title, description, imageURL, projectURL }) => {
   return (
     <div
       style={{ backgroundColor: "#2a4b57", border: "1px solid #9494ba" }}
-      className=" w-full h-auto rounded-xl  flex flex-col gap-3 "
+      className="Card w-full h-auto rounded-xl  flex flex-col gap-3 "
     >
       <div className="">
         <a href={projectURL}>
