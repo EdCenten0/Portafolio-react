@@ -51,11 +51,6 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row gap-4">
           <li className="flex flex-row items-center gap-1 hover:scale-125 hover:px-2 transition-all">
-            <a href="">
-              <img src={dark_mode} alt="theme" className="h-7 w-7" />
-            </a>
-          </li>
-          <li className="flex flex-row items-center gap-1 hover:scale-125 hover:px-2 transition-all">
             <a href="https://github.com/EdCenten0">
               <img src={github} alt="Github" className="h-7 w-7" />
             </a>
