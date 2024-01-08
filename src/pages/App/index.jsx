@@ -31,7 +31,10 @@ function App() {
           <SecondaryPanel>
             <h3 className=" text-xl font-bold pb-4">Some data about me</h3>
             <p className=" font-medium my-4">
-              Contact email: cchavarriacenteno8@gmail.com
+              Contact email:{" "}
+              <a href="mailto:cchavarriacenteno8@gmail.com?">
+                cchavarriacenteno8@gmail.com
+              </a>
             </p>
             <p className=" font-medium my-4">Age: 18 years old</p>
             <p className=" font-medium my-4">Country: Nicaragua</p>
@@ -41,7 +44,12 @@ function App() {
             <p className=" font-medium my-4">
               Languages: English(B2) - Spanish(Native)
             </p>
-            <DownloadButton />
+            <DownloadButton
+              downloadURL={
+                "https://firebasestorage.googleapis.com/v0/b/portafolio-react-27e84.appspot.com/o/Carlos%20Eduardo%20Chavarria%20Centeno%20CV.pdf?alt=media&token=868c2451-116d-463e-bb38-a089fde5ee7a"
+              }
+              buttonTitle={"Curriculum Vitae"}
+            />
           </SecondaryPanel>
         </Layout>
       </BrowserRouter>

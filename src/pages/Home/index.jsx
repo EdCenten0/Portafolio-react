@@ -17,7 +17,7 @@ function Home() {
               Carlos Eduardo Chavarria Centeno
             </h3>
             <p className=" font-medium">Computer Science student</p>
-            <p className=" font-medium">Im currently learning by myself</p>
+            <p className=" font-medium">I'm currently learning by myself</p>
             <p className=" font-medium">
               Looking for opportunities in order to develop myself
             </p>
