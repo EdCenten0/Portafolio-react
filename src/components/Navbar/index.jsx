@@ -13,12 +13,12 @@ const Navbar = () => {
 
   return (
     <nav
-      style={{ backgroundColor: "#376ca0" }}
+      style={{ backgroundColor: "#0b2c57" }}
       className=" order-1 w-full h-10 p-6  rounded-lg flex items-center col-span-3 row-start-1 m-auto mb-4"
     >
       <ul className="w-full flex flex-row gap-8 justify-between">
         <div className="flex flex-row gap-4">
-          <li className="flex flex-row items-center gap-1 rounded-xl hover:scale-125 hover:px-2 transition-all ">
+          <li className="flex flex-row items-center justify-center gap-1 rounded-xl hover:scale-125 hover:px-2 transition-all ">
             <NavLink
               className="flex flex-row items-center gap-1"
               to="/"
