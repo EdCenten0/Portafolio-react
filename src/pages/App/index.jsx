@@ -32,7 +32,10 @@ function App() {
             <h3 className=" text-xl font-bold pb-4">Some data about me</h3>
             <p className=" font-medium my-4">
               Contact email:{" "}
-              <a href="mailto:cchavarriacenteno8@gmail.com?">
+              <a
+                className=" animate-pulse text-blue-500 hover:text-blue-700"
+                href="mailto:cchavarriacenteno8@gmail.com?"
+              >
                 cchavarriacenteno8@gmail.com
               </a>
             </p>
