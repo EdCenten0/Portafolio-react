@@ -35,6 +35,19 @@ const Projects = () => {
   }, [searchBarValue, projects]);
 
   const renderView = () => {
+    if (projects.length === 0) {
+      return (
+        <>
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center w-full ">
+            <div className="animate-pulse w-full h-96 bg-gray-700 rounded-xl"></div>
+            <div className="animate-pulse w-full h-96 bg-gray-700 rounded-xl"></div>
+            <div className="animate-pulse w-full h-96 bg-gray-700 rounded-xl"></div>
+            <div className="animate-pulse w-full h-96 bg-gray-700 rounded-xl"></div>
+          </div>
+        </>
+      );
+    }
+
     if (filteredProjects.length > 0) {
       return (
         <>
