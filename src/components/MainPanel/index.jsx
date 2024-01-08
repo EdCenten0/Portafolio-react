@@ -4,7 +4,7 @@ import "./index.css";
 const MainPanel = ({ children }) => {
   return (
     <div
-      style={{ backgroundColor: "#376ca0" }}
+      style={{ backgroundColor: "#0b2c57" }}
       className=" order-2 w-11/12 h-auto m-auto rounded-md p-5  overflow-auto MainPanel "
     >
       {children}
