@@ -19,7 +19,7 @@ function Home() {
             <p className=" font-medium">Computer Science student</p>
             <p className=" font-medium">Im currently learning by myself</p>
             <p className=" font-medium">
-              Looking for opportunities for developing myself
+              Looking for opportunities in order to develop myself
             </p>
             <div className=" flex my-6 flex-wrap gap-2">
               <img
@@ -88,24 +88,31 @@ function Home() {
         <div>
           <h3 className=" text-xl font-bold pb-4">About</h3>
           <p className="my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa
-            esse, recusandae excepturi molestiae tempora? Cum esse assumenda,
-            blanditiis ullam fugit voluptates repudiandae dolor nihil incidunt
-            officiis porro, corrupti sapiente. Lorem ipsum dolor sit amet
+            Hello! I'm Carlos Eduardo Chavarria, an 18-year-old dedicated to the
+            field of System Engineering at Universidad Centroamerica (UCA). My
+            academic journey began in February 2022, where I eagerly dived into
+            the intricacies of programming languages such as C, C++, Java,
+            Python, Visual Basic, and various databases including MySQL, MSSQL,
+            and more.
           </p>
           <p className="my-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-            quaerat in asperiores officiis, aliquam sunt, harum, placeat non
-            nobis nulla obcaecati deserunt iure? Tempore odio earum tempora
-            illo, accusamus eius?
+            In May 2023, as part of my ongoing academic journey, I continued to
+            deepen my understanding, focusing on web development while exploring
+            frontend, backend languages, and nuanced database management.
           </p>
 
           <p className="my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            debitis ea non aperiam itaque vitae numquam eveniet corporis id
-            libero, eos alias aut temporibus dicta officia architecto fuga
-            repellat voluptates. Lorem ipsum dolor sit amet consectetur,
+            I consider myself on a continual learning path within the realm of
+            system engineering. My dedication extends beyond the conventional
+            boundaries to encompass desktop development and backend languages.
+            This personal web page serves as a reflection of my experiences,
+            projects, and growth.
           </p>
+          <p className="my-4">
+            Join me as I navigate the evolving landscape of system engineering,
+            driven by a passion for learning and a commitment to excellence.
+          </p>
+          <p className="my-4">Let's embrace the coding journey together!</p>
         </div>
       </MainPanel>
     </>
