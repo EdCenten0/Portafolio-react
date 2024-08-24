@@ -4,7 +4,7 @@ import "./index.css";
 const Card = ({ title, description, imageURL, projectURL }) => {
   return (
     <div
-      style={{ backgroundColor: "#1f1f3a", border: "1px solid #d2faf9" }}
+      style={{ backgroundColor: "#0f0f25", border: "1px solid #d2faf9" }}
       className="Card w-full h-auto rounded-xl  flex flex-col gap-3 "
     >
       <div className="">

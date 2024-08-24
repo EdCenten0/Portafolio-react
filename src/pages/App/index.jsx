@@ -29,22 +29,19 @@ function App() {
           <AppRoutes />
           <Navbar />
           <SecondaryPanel>
-            <h3 className=" text-xl font-bold pb-4">Some data about me</h3>
-            <p className=" font-medium my-4">
+            <h3 className=' text-xl font-bold pb-4'>Some data about me</h3>
+            <p className=' font-medium my-4'>
               Contact email:{" "}
               <a
-                className=" animate-pulse text-blue-500 hover:text-blue-700"
-                href="mailto:cchavarriacenteno8@gmail.com?"
+                className=' animate-pulse text-blue-500 hover:text-blue-700'
+                href='mailto:cchavarriacenteno8@gmail.com?'
               >
                 cchavarriacenteno8@gmail.com
               </a>
             </p>
-            <p className=" font-medium my-4">Age: 18 years old</p>
-            <p className=" font-medium my-4">Country: Nicaragua</p>
-            <p className=" font-medium my-4">
-              Education: Universidad Centroamericana
-            </p>
-            <p className=" font-medium my-4">
+            <p className=' font-medium my-4'>Age: 18 years old</p>
+            <p className=' font-medium my-4'>Country: Nicaragua</p>
+            <p className=' font-medium my-4'>
               Languages: English(B2) - Spanish(Native)
             </p>
             <DownloadButton
