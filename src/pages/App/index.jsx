@@ -39,7 +39,7 @@ function App() {
                 cchavarriacenteno8@gmail.com
               </a>
             </p>
-            <p className=' font-medium my-4'>Age: 18 years old</p>
+            <p className=' font-medium my-4'>Age: 20 years old</p>
             <p className=' font-medium my-4'>Country: Nicaragua</p>
             <p className=' font-medium my-4'>
               Languages: English(B2) - Spanish(Native)

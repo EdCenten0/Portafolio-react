@@ -17,10 +17,7 @@ function Home() {
               Carlos Eduardo Chavarria Centeno
             </h3>
             <p className=' font-medium'>Computer Science student</p>
-            <p className=' font-medium'>I'm currently learning by myself</p>
-            <p className=' font-medium'>
-              Looking for opportunities in order to develop myself
-            </p>
+            <p className=' font-medium'>Studying abroad</p>
             <div className=' flex my-6 flex-wrap gap-2'>
               <img
                 src='https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg'
@@ -88,7 +85,7 @@ function Home() {
         <div>
           <h3 className=' text-xl font-bold pb-4'>About</h3>
           <p className='my-4'>
-            Hello! I'm Carlos Eduardo Chavarria, an 18-year-old dedicated to the
+            Hello! I'm Carlos Eduardo Chavarria, an 20-year-old dedicated to the
             field of System Engineering. My academic journey began in February
             2022, where I eagerly dived into the intricacies of programming
             languages such as C, C++, Java, Python, Visual Basic, and various
